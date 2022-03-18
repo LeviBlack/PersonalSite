@@ -1,30 +1,31 @@
 import React from "react";
-import Emoji from "./Emoji";
-import { FaReact } from "react-icons/fa";
+import {
+  FaJsSquare,
+  FaReact,
+  FaHtml5,
+  FaCss3,
+  FaNpm,
+  FaNode,
+  FaGitAlt,
+  FaGithub,
+} from "react-icons/fa";
+import { SiFirebase, SiRedux, SiMongodb, SiTailwindcss } from "react-icons/si";
 
-const Skills = ({ title }) => {
+const Skills = () => {
   return (
-    <div className="mt-[150px] ">
-      <h1 className="text-2xl font-bold decoration-gray-600 text-indigo-400 ml-[90px] mx-auto">
-        {title}
-      </h1>
-      <div className="flex place-content-around mt-12 max-w-lg mx-auto">
-        <div className="grid col-span-4 gap-x-8 gap-y-8 ">
-          <FaReact size="4em" />
-          <FaReact size="4em" />
-          <FaReact size="4em" />
-        </div>
-        <div className="grid col-span-4 gap-x-8 gap-y-8">
-          <FaReact size="4em" />
-          <FaReact size="4em" />
-          <FaReact size="4em" />
-        </div>
-        <div className="grid col-span-4 gap-x-8 gap-y-8">
-          <FaReact size="4em" />
-          <FaReact size="4em" />
-          <FaReact size="4em" />
-        </div>
-      </div>
+    <div className="section-content section-icons">
+      <FaHtml5 className="icon-hover" />
+      <FaCss3 className="icon-hover" />
+      <FaJsSquare className="icon-hover" />
+      <FaReact className="icon-hover" />
+      <SiRedux className="icon-hover" />
+      <FaNode className="icon-hover" />
+      <SiMongodb className="icon-hover" />
+      <SiFirebase className="icon-hover" />
+      <SiTailwindcss className="icon-hover" />
+      <FaNpm className="icon-hover" />
+      <FaGitAlt className="icon-hover" />
+      <FaGithub className="icon-hover" />
     </div>
   );
 };

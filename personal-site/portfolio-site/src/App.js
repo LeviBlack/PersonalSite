@@ -1,13 +1,15 @@
-import About from "./components/About";
-import Herosection from "./components/Herosection";
-import Skills from "./components/Skills";
+import Header from "./components/Header";
+import Background from "./components/Background";
+import MyProjects from "./components/MyProjects";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <div className="mt-[150px]">
-      <About />
-      <Herosection title={"BACKGROUND"} />
-      <Skills title={"SKILLS"} />
+    <div>
+      <Navbar />
+      <Header />
+      <Background />
+      <MyProjects />
     </div>
   );
 }
